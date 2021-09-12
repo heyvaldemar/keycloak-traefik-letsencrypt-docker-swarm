@@ -59,16 +59,16 @@ services:
       # Database user (replace with yours)
       POSTGRES_USER: keycloakdbuser
       POSTGRES_PASSWORD_FILE: /run/secrets/keycloak-postgres-password
+    networks:
+      - keycloak-network
+    secrets:
+      - keycloak-postgres-password
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres -h 127.0.0.1"]
       interval: 10s
       timeout: 5s
       retries: 3
       start_period: 60s
-    networks:
-      - keycloak-network
-    secrets:
-      - keycloak-postgres-password
     deploy:
       mode: replicated
       replicas: 1
