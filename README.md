@@ -1,5 +1,7 @@
 # Keycloak with Let's Encrypt in a Docker Swarm
 
+Install Docker Swarm by following my [guide](https://www.heyvaldemar.com/install-docker-swarm-on-ubuntu-server/).
+
 Configure Traefik and create secrets for storing the passwords on the Docker Swarm manager node before applying the configuration.
 
 Traefik [configuration](https://github.com/heyValdemar/traefik-letsencrypt-docker-swarm).
