@@ -24,7 +24,7 @@ Run `docker stack ps keycloak | grep keycloak_backups | awk 'NR > 0 {print $4}'`
 
 Deploy Keycloak in a Docker Swarm using the command:
 
-`docker stack deploy -c keycloak-letsencrypt-docker-swarm.yml keycloak`
+`docker stack deploy -c keycloak-traefik-letsencrypt-docker-swarm.yml keycloak`
 
 # Author
 
