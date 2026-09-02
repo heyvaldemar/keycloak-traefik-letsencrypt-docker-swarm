@@ -1,3 +1,5 @@
+> **Archived.** I maintain and CI-test the Docker Compose version of this stack instead: [keycloak-traefik-letsencrypt-docker-compose](https://github.com/heyvaldemar/keycloak-traefik-letsencrypt-docker-compose). It ships digest-pinned images and a deployment verification pipeline that boots the full stack on every change. This repository stays up for reference but receives no updates.
+
 # Keycloak with Let's Encrypt in a Docker Swarm
 
 Install Docker Swarm by following my [guide](https://www.heyvaldemar.com/install-docker-swarm-on-ubuntu-server/).
